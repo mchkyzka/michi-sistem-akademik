@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord Admin</title>
+    <link rel="stylesheet" href="da.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="header">
+    <div class="logo">
+      <img src="../assets/logo ht.png" alt="Logo">
+      <div>
+        <div class="title">SMK HANG TUAH 1 JAKARTA</div>
+        <div class="subtitle">SMK PUSAT KEUNGGULAN</div>
+      </div>
+    </div>
+    <div class="logout-button">
+      <a href="../index.html"><i data-feather="log-out"></i></a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat-box">
+        <i data-feather="users"></i>
+        <h3>50</h3>
+        <p>Data Guru</p>
+      </div>
+      <div class="stat-box">
+        <i data-feather="user"></i>
+        <h3>950</h3>
+        <p>Data Murid</p>
+      </div>
+      <div class="stat-box">
+        <i data-feather="book"></i>
+        <h3>25</h3>
+        <p>Data Mata Pelajaran</p>
+      </div>
+      <div class="stat-box">
+        <i data-feather="star"></i>
+        <h3>-</h3>
+        <p>Data Nilai</p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feature-item">
+        <span>Kelola Pengumuman</span>
+        <i data-feather="chevron-right"></i>
+      </div>
+    <div class="features">
+      <div class="feature-item">
+        <span>Rekap Nilai</span>
+        <i data-feather="chevron-right"></i>
+      </div>
+      <div class="feature-item">
+        <span>Jadwal Pelajaran</span>
+        <i data-feather="chevron-right"></i>
+      </div>
+      <a href="formadduser.html" class="feature-item">
+        <span>Kelola Akun Pengguna</span>
+        <i data-feather="chevron-right"></i>
+      </a>
+    </div>
+  </div>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>

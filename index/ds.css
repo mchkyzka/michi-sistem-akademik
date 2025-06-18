@@ -1,0 +1,119 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #72ADD1;
+      padding: 20px;
+      color: #101763;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+    .school-info {
+      display: flex;
+      flex-direction: column;
+    }
+    .school-info h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .school-info span {
+      font-size: 14px;
+      color: #C91414;
+    }
+    .welcome-section {
+      padding: 20px;
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+    }
+    .welcome-section h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .username {
+      color: #3f51b5;
+    }
+    .current-schedule {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      margin: 20px auto;
+      text-align: center;
+      border-radius: 5px;
+      max-width: 300px;
+    }
+    .main-box {
+      background-color: #72ADD1;
+      border-radius: 40px;
+      padding: 60px;
+      margin: 20px;
+    }
+    .main-content {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .left-panel {
+      flex: 1;
+      max-width: 400px;
+    }
+    .card {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .card:hover {
+      background-color: #4066a0;
+    }
+    .card-link {
+      text-decoration: none;
+      color: black;
+    }
+    .right-panel {
+      width: 250px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .see-more {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2;
+    }
+    .see-more:hover {
+      background-color: #0a3a81;
+    }
+  

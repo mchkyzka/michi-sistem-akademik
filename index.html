@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login SMK Hang Tuah 1 Jakarta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-box" method="POST">
+      <h2>LOGIN</h2>
+      <img src="assets/logo ht.png" alt="logo ht" class="logo">
+
+      <div class="form-group">
+        <label for="username">Username :</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Role :</label>
+        <select id="role" name="role" required>
+          <option value="">Select</option>
+          <option value="siswa">Siswa</option>
+          <option value="guru">Guru</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script>
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    const role = document.getElementById('role').value;
+
+    if (role === "") {
+      alert("Silakan pilih role terlebih dahulu.");
+      return;
+    }
+
+    // Simpan role di localStorage biar bisa dibaca di loading.html
+    localStorage.setItem("role", role);
+
+    // Arahkan ke loading.html
+    window.location.href = "index/loading.html";
+  });
+</script>
+
+
+</body>
+</html>

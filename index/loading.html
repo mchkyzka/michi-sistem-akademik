@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+    .loader {
+      border: 8px solid #ccc;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  <script>
+  // Ambil role dari localStorage
+  const role = localStorage.getItem("role");
+
+  // Timer loading 3 detik
+  setTimeout(() => {
+    if (role === "siswa") {
+      window.location.href = "dashboardsiswa.html";
+    } else if (role === "guru") {
+      window.location.href = "dashboardguru.html";
+    } else if (role === "admin") {
+      window.location.href = "dashboardadmin.html";
+    } else {
+      alert("Role tidak valid!");
+      window.location.href = "../login.html";
+    }
+  }, 3000);
+</script>
+
+</head>
+<body>
+  <div class="loader"></div>
+</body>
+</html>
